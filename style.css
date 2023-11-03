@@ -1,0 +1,274 @@
+/*!
+Theme Name: ping-passion
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ping-pas
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+ping-passion is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+* {
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+main {
+	min-height: 100vh;
+}
+
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	background-color: white;
+	/* z-index: 5; */
+}
+
+nav.main-navigation ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	align-items: center;
+	justify-content: center;
+	padding-block: 30px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+p.main-title {
+	text-align: center;
+	margin-block: 30vh;
+	font-size: 38px;
+}
+
+.page-header {
+	padding-top: 200px;
+	text-align: center;
+}
+
+.main-revetements {
+	background-color: rgb(53, 53, 112);
+	color: white;
+}
+
+.main-bois {
+	background-color: rgb(185, 142, 64);
+	color: white;
+}
+
+section.revetements-wrapper, section.bois-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 50px;
+	padding-block: 50px;
+}
+
+.revetement-card, .bois-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	border-radius: 20px;
+	align-self: normal;
+	background-color: white;
+	border: 10px solid white;
+	transition-duration: .5s;
+}
+
+.revetement-card {
+	box-shadow: 0 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bois-card {
+	box-shadow: 0 0 10px 20px rgba(255, 255, 255, 0.2);
+
+}
+
+.revetement-card:hover, .bois-card:hover {
+	box-shadow: none;
+}
+
+.revetement-card img, .bois-card img {
+	width: 100%;
+	height: 300px;
+	object-fit: contain;
+	object-position: center;
+}
+
+.revetement-card__content, .bois-card__content {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+ul.caracteristiques {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border-radius: 5px;
+	border: 1px solid rgba(95, 95, 95,0.3);
+	padding: 10px;
+}
+
+.site-footer {
+	border-top: 1px solid rgba(95, 95, 95,0.3);
+	padding: 30px;
+}
+
+.site-info {
+	margin-inline: 100px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: flex-start;
+	justify-content: space-around;
+	gap: 30px;
+}
+
+.site-info > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.site-info > div ul {
+	list-style: none;
+	margin-top: 30px;
+}
+
+.site-info > div ul li {
+	margin-bottom: 15px;
+}
+
+.site-info > div.marques ul {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-content: center;
+}
+
+.single-card-revetement, .single-card-bois {
+	margin: 100px;
+	padding: 50px 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	gap: 50px;
+	border-radius: 5px;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.single-card-revetement__content, .single-card-bois__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 30px;
+}
+
+ul {
+	list-style: none;
+}
+
+.single-card-revetement__content ul ul {
+	display: flex;
+	gap: 10px;
+}
+
+.single-card-revetement img, .single-card-bois img {
+	width: 50vh;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+@media screen and (max-width: 1090px) {
+	.single-card-revetement, .single-card-bois {
+		flex-direction: column;
+	}
+	.single-card-revetement img, .single-card-bois img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.site-header {
+		flex-direction: column;
+	}
+	.site-info {
+		grid-template-columns: 1fr;
+		margin-inline: 0;
+	}
+	.single-card-bois, .single-card-revetement {
+		margin-inline: 5px;
+	}
+}
