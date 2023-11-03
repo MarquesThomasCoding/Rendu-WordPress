@@ -1,0 +1,42 @@
+.site-footer {
+	border-top: 1px solid rgba(95, 95, 95,0.3);
+	padding: 30px;
+}
+
+.site-info {
+	margin-inline: 100px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: flex-start;
+	justify-content: space-around;
+	gap: 30px;
+}
+
+.site-info > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.site-info > div ul {
+	list-style: none;
+	margin-top: 30px;
+}
+
+.site-info > div ul li {
+	margin-bottom: 15px;
+}
+
+.site-info > div.marques ul {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-content: center;
+}
+
+
+@media screen and (max-width: 600px) {
+	.site-info {
+		grid-template-columns: 1fr;
+		margin-inline: 0;
+	}
+}

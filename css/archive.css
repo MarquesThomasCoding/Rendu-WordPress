@@ -1,0 +1,59 @@
+.main-revetements {
+	background-color: rgb(53, 53, 112);
+	color: white;
+}
+
+.main-bois {
+	background-color: rgb(185, 142, 64);
+	color: white;
+}
+
+section.revetements-wrapper, section.bois-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 50px;
+	padding-block: 50px;
+}
+
+.revetement-card, .bois-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	border-radius: 20px;
+	align-self: normal;
+	background-color: white;
+	border: 10px solid white;
+	transition-duration: .5s;
+}
+
+.revetement-card {
+	box-shadow: 0 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bois-card {
+	box-shadow: 0 0 10px 20px rgba(255, 255, 255, 0.2);
+
+}
+
+.revetement-card:hover, .bois-card:hover {
+	box-shadow: none;
+}
+
+.revetement-card img, .bois-card img {
+	width: 100%;
+	height: 300px;
+	object-fit: contain;
+	object-position: center;
+}
+
+.revetement-card__content, .bois-card__content {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

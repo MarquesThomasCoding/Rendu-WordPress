@@ -1,0 +1,45 @@
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	background-color: white;
+}
+
+nav.main-navigation ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	align-items: center;
+	justify-content: center;
+	padding-block: 30px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+p.main-title {
+	text-align: center;
+	margin-block: 30vh;
+	font-size: 38px;
+}
+
+.page-header {
+	padding-top: 200px;
+	text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+	.site-header {
+		flex-direction: column;
+	}
+}
