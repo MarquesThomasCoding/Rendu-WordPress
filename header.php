@@ -27,10 +27,18 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php
-			the_custom_logo();
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<a href="./index.php">
+					<?php
+					// Obtenir le champ image
+					$logo = get_field('logo', 'option');
+
+					// Afficher l'image
+					if ($logo) {
+						echo '<img class="logo" src="' . $logo['url'] . '" alt="' . $logo['alt'] . '">';
+					}
+					?>
+				</a>
+				<!-- <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1> -->
 				<?php
 			$ping_pas_description = get_bloginfo( 'description', 'display' );
 			if ( $ping_pas_description || is_customize_preview() ) :

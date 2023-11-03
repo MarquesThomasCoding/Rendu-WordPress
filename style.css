@@ -77,3 +77,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 main {
 	min-height: 100vh;
 }
+
+p.main-title {
+	text-align: center;
+	margin-block: 30vh;
+	font-size: 38px;
+	border-bottom: 5px solid rgba(53, 53, 112, .7);
+}

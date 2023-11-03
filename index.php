@@ -19,8 +19,6 @@ get_header();
 
 	<p class="main-title">BIENVENUE SUR LE SITE PING-PASSION</p>
 
-		
-
 	</main><!-- #main -->
 
 <?php

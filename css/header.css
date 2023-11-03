@@ -25,10 +25,12 @@ a {
 	text-decoration: none;
 }
 
-p.main-title {
-	text-align: center;
-	margin-block: 30vh;
-	font-size: 38px;
+img.logo {
+	width: 200px;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+
 }
 
 .page-header {
