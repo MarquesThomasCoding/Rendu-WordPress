@@ -2,7 +2,8 @@
 Projet étudiant
 
 ### Description :
-Initiation à Wordpress via la "refonte" du site de Ping-Passion via un thème personnalisé "ping-passion"
+Initiation à Wordpress via la "refonte" du site de Ping-Passion via un thème personnalisé "ping-passion".
+Ce repo contient le thème Wordpress "ping-passion"
 
 ### TEchnologies :
 * HTML
