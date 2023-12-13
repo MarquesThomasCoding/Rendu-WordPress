@@ -1,4 +1,5 @@
 ## Inititation à Wordpress
+Projet étudiant
 
 ### Description :
 Initiation à Wordpress via la "refonte" du site de Ping-Passion via un thème personnalisé "ping-passion"
